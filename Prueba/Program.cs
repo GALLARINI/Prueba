@@ -1,4 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-Console.WriteLine("Buen Dia");
-Console.WriteLine("Buen Dia");
+﻿using Prueba;
+
+var alumno = new Alumno();
+
+alumno.Legajo = 899238;
+alumno.Apellido = "Gallarini";
+alumno.Nombre = "Francisco";
+alumno.FechaDeNacimiento = new DateTime(1999, 12, 22);
+
+var materia = new Materia();
+
+
+alumno.AnotarseA(materia);
+
+var edad = alumno.CalcularEdadEnAños();
